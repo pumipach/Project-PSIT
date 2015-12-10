@@ -50,7 +50,7 @@
 
 <body>
 
-   <div class="folium-map" id="folium_e83f5d30cd52423982d3fc7ec2462bc5" style="width: 100%; height: 100%"></div>
+   <div class="folium-map" id="folium_86f3d4f513274700aedb920a31f85605" style="width: 100%; height: 100%"></div>
 
    <script>
 
@@ -94,7 +94,7 @@
       /*
       Creates the map and adds the selected layers
       */
-      var map = L.map('folium_e83f5d30cd52423982d3fc7ec2462bc5', {
+      var map = L.map('folium_86f3d4f513274700aedb920a31f85605', {
                                        center:[15.0, 100.0],
                                        zoom: 7,
                                        maxBounds: bounds,
@@ -118,7 +118,7 @@
       
 
       
-      var polygon_1 = new L.RegularPolygonMarker(new L.LatLng(13.72842, 100.53122), {
+      var polygon_1 = new L.RegularPolygonMarker(new L.LatLng(13.71888, 100.52578), {
     color: 'black',
     opacity: 1,
     weight: 2,
@@ -128,9 +128,23 @@
     rotation: 60,
     radius: 10
 });
-      polygon_1.bindPopup("<iframe frameBorder='0' src='Output.html'></iframe>");
+      polygon_1.bindPopup("&#3650;&#3619;&#3591;&#3614;&#3618;&#3634;&#3610;&#3634;&#3621;1<iframe frameBorder='0' src='Output.html'></iframe>");
       polygon_1._popup.options.maxWidth = 300;
       map.addLayer(polygon_1)
+      
+      var polygon_2 = new L.RegularPolygonMarker(new L.LatLng(13.60839, 100.55166), {
+    color: 'black',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#FF0000',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 60,
+    radius: 10
+});
+      polygon_2.bindPopup("&#3650;&#3619;&#3591;&#3614;&#3618;&#3634;&#3610;&#3634;&#3621;2<iframe frameBorder='0' src='Output.html'></iframe>");
+      polygon_2._popup.options.maxWidth = 300;
+      map.addLayer(polygon_2)
       
 
       
